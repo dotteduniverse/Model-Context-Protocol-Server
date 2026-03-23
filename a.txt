@@ -1,0 +1,21 @@
+mcp-context-server/
+├── README.md
+├── requirements.txt
+├── .env.example
+├── docker-compose.yml
+├── app.py                     # Optional Streamlit UI (if needed)
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── auth.py                # JWT handling
+│   ├── database.py            # Database connection & RLS setup
+│   ├── models.py              # Pydantic schemas
+│   ├── context_service.py     # FastAPI endpoints
+│   ├── audit.py               # Audit logging
+│   └── init_db.py             # Database initialization script
+├── scripts/
+│   ├── init_db.py             # Create tables, RLS, sample data
+│   └── generate_token.py      # Helper to create JWT for testing
+└── tests/
+    ├── __init__.py
+    └── test_context.py
