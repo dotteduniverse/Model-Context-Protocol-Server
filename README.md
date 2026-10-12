@@ -253,3 +253,4 @@ psql -h localhost -U postgres -d mcp_db -c "SELECT * FROM audit_logs ORDER BY ti
 
 MIT
 .
+.
